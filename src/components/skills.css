@@ -1,0 +1,210 @@
+.openSkillsmodal{
+    display: block; 
+    position: fixed; 
+    height: 100%; 
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.397); 
+    z-index: 1; 
+    left: 0px;top: 0px; 
+} 
+.displayNone{
+    display: none;
+}
+.closeSkillsmodal{
+    /* display: none;  */
+    position: fixed; 
+    height: 100%; 
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.397); 
+    z-index: 1; 
+    left: 0px;top: 0px; 
+} 
+.Skillsmodal-content{
+    position: relative;
+   background-color: white;
+   margin:20% auto;
+   margin-top: 5%;
+   padding:20px;
+   width:40%;
+   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 8px 0 rgba(0, 0, 0, 0.17);
+   animation-name: Skillsmodalopen;
+   animation-duration: 800ms;
+}
+.close-skill-modal{
+    position: relative;
+    background-color: white;
+    margin:20% auto;
+    margin-top: 5%;
+    padding:20px;
+    width:40%;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 8px 0 rgba(0, 0, 0, 0.17);
+    animation-name: Skillsmodalclose;
+    animation-duration: 800ms;
+}
+.Skillsclose-btn{
+   float: right;
+   font-size: 30px;
+   color: #ccc;
+}
+.Skillsclose-btn:hover,.Skillsclose-btn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Skillsmodal-btn{
+    width:100%;
+    height:50px;
+}
+.Skills-middle{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+.Skills-middle-left{
+    flex: 1;
+    height: auto;
+    width:100%;
+    margin-left: 20px;
+    
+}
+.Skills-middle-right{
+    flex: 1;
+    height: auto;
+    width:100%;
+    margin-left: 2px    ;    
+    
+}
+.Skills-upper-inputs{
+    width:80%;
+    /* height: 20%; */
+    /* border-radius: 1px; */
+    background-color: white;
+}
+.Skills-lower-inputs{
+    width:80%;
+    /* margin-top:30px; */
+    background-color: white;
+    /* margin-left: 20px; */
+    /* display: flex; */
+}
+.error-message{
+    /* border-color: rgb(202, 8, 8); */
+    width:80%;
+    border-color: red;
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-delay: 0.25s;
+    /* border-width: 0.5px */
+    
+}
+.add-btn{
+    display:block;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+.remove-btn{
+    display:block;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+.Skills-footer-div{
+    text-align: right;
+}
+
+.Skills-footer-cancel-btn{
+    background-color: rgba(233, 230, 230, 0.589);
+    padding:7px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(104, 99, 99);
+   
+}
+.Skills-submit{
+    padding: 7px;
+    background-color:  rgb(82,99,255);
+    border: none;
+    border-radius: 3px;
+    color:white;
+    margin-left: 5px;
+}
+@keyframes Skillsmodalopen{
+    0%{top:-1000px;}
+    100%{top:0px}
+}
+@keyframes Skillsmodalclose{
+    0%{top:0px;}
+    100%{top:-1000px}
+}
+@keyframes bounce {
+    0% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+    37% {
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    55% {
+      transform: translateX(-5px);
+      timing-function: ease-in;
+    }
+    73% {
+      transform: translateX(4px);
+      timing-function: ease-out;
+    }
+    82% {
+      transform: translateX(-4px);
+      timing-function: ease-in;
+    }
+    91% {
+      transform: translateX(2px);
+      timing-function: ease-out;
+    }
+    96% {
+      transform: translateX(-2px);
+      timing-function: ease-in;
+    }
+    100% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+  }
+.addSkill{
+    height:10px;
+    width: 15px;
+    border:1px solid gray;
+    border-radius: 2px;
+    margin-left: 5px; 
+    display: inline-block;
+}
+.remove-skill{
+    height:10px;
+    width:15px;
+    border:1px solid gray;
+    border-radius: 2px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.no-more-add{
+    position: relative;
+    color:red;
+    font-size: 12px;
+    margin-left: 20px;
+    animation-name: bounce;
+    animation-duration: .5s; 
+    animation-delay: 2s; 
+}
+
+.addSkill .add-btn:hover{
+    background-color: gray;
+    color: white
+}
+.remove-skill .remove-btn:hover{
+    background-color: gray;
+    color: white;
+}

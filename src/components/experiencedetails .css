@@ -1,0 +1,158 @@
+.open-ExperienceDetailsmodal{
+    /* display: none;  */
+    position: fixed; 
+    height: 100%; 
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.397); 
+    z-index: 1; 
+    left: 0px;top: 0px; 
+} 
+.displayNone{
+    display: none;
+}
+.close-ExperienceDetail-modal{
+    position: fixed; 
+    height: 100%; 
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.397); 
+    z-index: 1; 
+    left: 0px;top: 0px; 
+  } 
+
+.ExperienceDetailsmodal-content{
+    position: relative;
+   background-color: white;
+   margin:20% auto;
+   margin-top: 5%;
+   padding:20px;
+   width:40%;
+   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 8px 0 rgba(0, 0, 0, 0.17);
+   animation-name: ExperienceDetailsmodalopen;
+   animation-duration: 800ms;
+}
+.close-skill-ExperienceDetailsmodal-content{
+    position: relative;
+    background-color: white;
+    margin:20% auto;
+    margin-top: 5%;
+    padding:20px;
+    width:40%;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 8px 0 rgba(0, 0, 0, 0.17);
+    animation-name: ExperienceDetailsmodalclose;
+    animation-duration: 800ms;
+  }
+.close-btn{
+   float: right;
+   font-size: 30px;
+   color: #ccc;
+}
+.close-btn:hover,.close-btn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.skills-middle{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+    height: 150px
+}
+.skills-middle-left{
+    flex: 1;
+    height: 100%;
+    width:100%;
+    margin-left: 20px;
+    
+}
+.skills-middle-right{
+    flex: 1;
+    height: 100%;
+    width:100%;
+    margin-left: 20px;    
+    
+}
+.upper-inputs{
+    width:80%;
+    height: 20%;
+    /* border-width:0.5px; */
+    
+    /* border-radius: 1px; */
+}
+.experience-error-message{
+    border-color: red;
+    /* border-width:0.5px; */
+    width:80%;
+    height: 20%;
+}
+.date-div{
+    margin-top: 30px;
+}
+.checkbox{
+    /* margin-top: 10px; */
+}
+.checbox-label{
+    color: gray;
+    /* margin-top: 10px; */
+    /* position: static */
+}
+.bottom{
+    margin-bottom: 20px;
+}
+.description{
+    margin-bottom: 20px;
+}
+.button-div{
+    margin-bottom: 10px;
+}
+.footer-div{
+    text-align: right;
+}
+/* .footer-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: 
+} */
+.footer-save-btn{
+    padding: 7px;
+    background-color: rgb(82,99,255);
+    border: none;
+    border-radius: 3px;
+    color:white;
+    margin-left: 5px;
+}
+.footer-cancel-btn{
+    background-color: rgba(233, 230, 230, 0.589);
+    padding:7px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(104, 99, 99);
+   
+}
+.submit{
+    padding: 7px;
+    background-color:  rgb(82,99,255);
+    border: none;
+    border-radius: 3px;
+    color:white;
+    margin-left: 5px;
+}
+.ExperienceDetailsmodal-btn{
+    width:100%;
+    height:50px;
+}
+.style-btn{
+    background-color: white;    
+    height:35px;
+    width:40px;
+}
+@keyframes ExperienceDetailsmodalopen{
+    0%{top:-1000px;}
+    100%{top:0px}
+}
+@keyframes ExperienceDetailsmodalclose{
+    0%{top:0px;}
+    100%{top:-1000px}
+}

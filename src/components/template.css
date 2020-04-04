@@ -1,0 +1,180 @@
+/* .photo{
+    display: inline-block;
+    padding: 40px;
+    background-color: pink;
+}
+.title{
+    display: inline-block;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: rgb(211, 81, 81) ;
+    padding-right: 30%;
+}
+.title-span{
+    margin-left:30px;
+}
+.bottom-left{
+    height:50%;
+    background-color: rgb(211, 81, 81);
+} */
+.container{
+    width:100%;
+    height:100%
+}
+table{
+    width: 80%;
+    margin: auto;
+    /* border-right:1px solid */
+}
+.left{
+    width:5%;
+    background-color: pink;
+
+}
+.right{
+    width:35%;
+    background-color:red;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    /* height: 100px; */
+}
+.upper{
+    height:70px;
+}
+.photo{
+    margin:0%;
+    /* font-size:20px; */
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 100px;
+}
+.photo-text{
+    display:inline-block;
+    margin:0px;
+    position: relative;
+    top:41px;
+    left:41px
+}
+.title-container{
+    height:50px;
+    width:100%;
+}
+.title{
+    margin-left: 35px;
+    font-size:25px;
+    color: rgb(235, 226, 226);
+    height: 60px;
+}
+.title-input{
+    margin-left: 40px;
+    font-size:20px;
+    background-color: red;  
+    color: white;
+
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 30px;
+    color: rgb(235, 226, 226);
+    width: 100%
+}
+.contacts-input{
+    background-color: red;
+    color: black;
+    width:120px;
+    height:10px;
+    font-size: 12px;
+    border:1px solid white;
+}
+.errorContacts{
+    background-color: red;
+    color: black;
+    width:120px;
+    height:10px;
+    font-size: 12px;
+    border:1px solid rgb(20, 3, 3);
+}
+.contact-text{
+    color: rgb(9, 9, 129);
+}
+.lower{
+    height: 350px;
+}
+.lower-left{
+    background-color: red;
+    vertical-align: top;   
+}
+.address{
+    font-size: 12px;
+    color: rgb(235, 226, 226);
+}
+.adress-div{
+    width: 100%;
+}
+.address-input{
+    width:96%;
+    height:50px;
+    font-size: 12px;
+}
+.address-para{
+    width: 100%;
+    font-size: 12px;
+    color: rgb(9, 9, 129);
+}
+.languages{
+    /* margin-top: 60px; */
+    font-size: 12px;
+    color: rgb(235, 226, 226);
+}
+.lang-div{
+    width: 100%;
+}
+.lang-input{
+    width:96%;
+    height:50px;
+    font-size: 12px;
+}
+.lang-para{
+    width: 100%;
+    font-size: 12px;
+    color: rgb(9, 9, 129)
+}
+.address-lang-plus{
+    display: block;
+    text-align: center;
+    color: white
+}
+.lower-right{
+    vertical-align: top;    
+}
+
+.bottom-right-text{
+    font-size: 25px;
+}
+.line1{
+    /* margin-top: 55px; */
+    margin-bottom: 0px;
+    margin-top:10px;
+}
+.line2{
+    /* margin-top: 30px; */
+    margin-bottom: 0px;    
+}
+.button{
+    width:100%;
+    height:40px;
+}
+.skills-text{
+    font-weight: bold
+}
+.left:hover{
+    background-color: rgb(243, 138, 138);
+    transition-property: background;
+    transition-duration: 600ms;
+      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
